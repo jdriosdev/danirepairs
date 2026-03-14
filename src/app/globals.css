@@ -40,3 +40,25 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Navbar styles */
+
+.navbar {
+  margin: 10px auto;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-right: 2px;
+  transition: border 1s ease;
+}
+
+.navbar a:hover {
+  border: 1px solid white;
+}
