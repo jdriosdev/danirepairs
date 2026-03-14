@@ -7,10 +7,10 @@ export default function Home() {
       <main className={styles.main}>
         <Image
           className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
+          src="/DaniRepairsLogo.svg"
+          alt="Dani Repairs logo"
           width={100}
-          height={20}
+          height={150}
           priority
         />
         <div className={styles.intro}>
@@ -25,7 +25,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              className={styles.logo}
+              className={styles.logoInvert}
               src="/call.svg"
               alt="Vercel logomark"
               width={16}

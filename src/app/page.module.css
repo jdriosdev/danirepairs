@@ -126,6 +126,9 @@ a.secondary {
   .logo {
     filter: invert();
   }
+  .logoInvert {
+    filter: invert();
+  }
   .logoWp {
     filter: none;
     margin-right: 4px;
