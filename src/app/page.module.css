@@ -10,7 +10,7 @@
   --button-secondary-border: #ebebeb;
 
   display: flex;
-  min-height: 100vh;
+  min-height: 95vh;
   align-items: center;
   justify-content: center;
   font-family: var(--font-geist-sans);
@@ -19,7 +19,7 @@
 
 .main {
   display: flex;
-  min-height: 100vh;
+  min-height: 95vh;
   width: 100%;
   max-width: 800px;
   flex-direction: column;
@@ -67,6 +67,7 @@
   max-width: 440px;
   gap: 16px;
   font-size: 14px;
+  margin: 16px 0;
 }
 
 .ctas a {
