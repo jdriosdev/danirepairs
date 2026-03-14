@@ -26,7 +26,7 @@ export default function Home() {
           >
             <Image
               className={styles.logo}
-              src="/vercel.svg"
+              src="/call.svg"
               alt="Vercel logomark"
               width={16}
               height={16}
@@ -35,11 +35,18 @@ export default function Home() {
           </a>
           <a
             className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://wa.me/420607905?text=Hi Daniel, I need a hand with a new project in Sydney"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Documentation
+            <Image
+              className={styles.logoWp}
+              src="/whatsapp.svg"
+              alt="Vercel logomark"
+              width={16}
+              height={16}
+            />
+            Message us
           </a>
         </div>
       </main>

@@ -126,6 +126,10 @@ a.secondary {
   .logo {
     filter: invert();
   }
+  .logoWp {
+    filter: none;
+    margin-right: 4px;
+  }
 
   .page {
     --background: #000;
