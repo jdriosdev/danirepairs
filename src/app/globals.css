@@ -50,6 +50,9 @@ a {
   display: flex;
   justify-content: center;
   overflow-x: scroll;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .navbar::-webkit-scrollbar {
