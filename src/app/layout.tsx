@@ -30,7 +30,7 @@ export default function RootLayout({
           <nav className="navbar">
             <Link href="/">Home</Link>
             <Link href="/services">Services</Link>
-            <Link href="/about">About us</Link>
+            <Link href="/about">About</Link>
             <Link href="/gallery">Gallery</Link>
             <Link href="/reviews">Reviews</Link>
           </nav>

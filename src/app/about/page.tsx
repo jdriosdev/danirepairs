@@ -10,13 +10,8 @@ export default function Home() {
         <div className={styles.intro}>
           <h1>About.</h1>
           <p>
-            We can help with a wide range of home repairs and improvements,
-            including skirting board installation, door adjustments, lock and
-            handle installation, frames and architraves, wall patching and
-            painting, Gyprock repairs, installation of polycarbonate roof
-            sheets, silicone sealing for kitchens and bathrooms, furniture
-            assembly, and much more. No job is too small — we are here to help
-            keep your home in great condition.
+            Hi, I'm Daniel, a local handyman based in Sydney. I help homeowners
+            with reliable home repairs, installations, and maintenance
           </p>
         </div>
         <CallToActions />

@@ -21,7 +21,7 @@
   display: flex;
   min-height: 95vh;
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -146,4 +146,33 @@ a.secondary {
     --button-secondary-hover: #1a1a1a;
     --button-secondary-border: #1a1a1a;
   }
+}
+
+.serviceListConatiner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.serviceItemCard {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 16px;
+  position: relative;
+  filter: drop-shadow(-4px 13px 22px #000000);
+  overflow: hidden;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+.serviceItemCardInfo {
+  background: #ffffff;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 67%,
+    rgba(253, 187, 45, 0) 100%
+  );
+  color: black;
+  padding: 16px 8px 8px 8px;
+  position: absolute;
+  bottom: 0;
 }

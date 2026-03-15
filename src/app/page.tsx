@@ -48,10 +48,11 @@ export default function Home() {
 
         <div className={styles.intro}>
           <p>
-            We offer reliable handyman services including skirting board
-            installation, door adjustments, locks and handles, architraves, wall
-            patching and painting, Gyprock repairs, polycarbonate roofing,
-            silicone sealing, furniture assembly, and more.
+            We offer reliable handyman services in Sydney including skirting
+            board installation, door adjustments, locks and handles,
+            architraves, wall patching and painting, Gyprock repairs,
+            polycarbonate roofing, silicone sealing, furniture assembly, and
+            more.
           </p>
         </div>
       </main>

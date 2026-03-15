@@ -1,6 +1,7 @@
 import styles from "../page.module.css";
 import CallToActions from "@/components/callToActions";
 import Logo from "@/components/Logo";
+import ServicesList from "@/components/ServicesList";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
           </p>
         </div>
         <CallToActions />
+
+        <ServicesList />
       </main>
     </div>
   );
