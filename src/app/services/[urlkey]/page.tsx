@@ -1,15 +1,15 @@
-import styles from "../page.module.css";
+import styles from "../../page.module.css";
 import CallToActions from "@/components/callToActions";
 import Logo from "@/components/Logo";
 import ServicesList from "@/components/ServicesList";
 
-export default function Page() {
+export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <Logo />
         <div className={styles.intro}>
-          <h1>Services.</h1>
+          <h1>My Services.</h1>
           <p>
             We can help with a wide range of home repairs and improvements,
             including skirting board installation, door adjustments, lock and
@@ -21,8 +21,6 @@ export default function Page() {
           </p>
         </div>
         <CallToActions />
-
-        <ServicesList />
       </main>
     </div>
   );
