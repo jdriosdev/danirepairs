@@ -8,6 +8,7 @@ import Logo from "@/components/Logo";
 import styles from "../../page.module.css";
 import { services, ServiceType } from "../data";
 import { useEffect } from "react";
+import NotFound from "@/components/NotFound";
 
 const findService = (urlKey: string): ServiceType | null => {
   const service = services?.find((item) => item.urlKey === urlKey);
@@ -31,7 +32,7 @@ export default function Home() {
   const { urlkey } = useParams();
   const service = findService(urlkey as string);
 
-  if (!service) return <>no service</>;
+  if (!service) return <NotFound />;
 
   useEffect(() => {
     document.title = `DR | ${service.name}`;
