@@ -8,8 +8,7 @@ export type ServiceType = {
     seoText: string;
     title: string;
     price: string;
-    show:Boolean
-
+    show:Boolean;
 }
 
 export const services: ServiceType[] = [
@@ -21,7 +20,7 @@ export const services: ServiceType[] = [
     image: "/serviceMedia/skirting.jpg",
     seoText: "Skirting board installation services in Sydney. We install and replace skirting boards for homes, renovations, and repairs.",
     title: "Skirting Board Installation Sydney",
-    price: "From $120",
+    price: "From $350",
     show: true
   },
   {
@@ -31,41 +30,41 @@ export const services: ServiceType[] = [
     description: "Fix sticking or misaligned doors. We adjust hinges, frames, and ensure smooth opening and closing.",
     image: "/serviceMedia/door.jpg",
     seoText: "Door adjustment and repair services in Sydney. Fix doors that don't close properly or rub against the frame.",
-    title: "Door Adjustment & Repair Sydney",
-    price: "From $90",
+    title: "Door Adjustment and Repair Sydney",
+    price: "From $250",
     show: true
   },
   {
     id: 3,
-    name: "Locks & Handles Installation",
-    urlKey: "locks-&-handles-installation",
+    name: "Locks and Handles Installation",
+    urlKey: "locks-handles-installation",
     description: "Installation and replacement of door locks, handles, and hardware for improved security and functionality.",
-   image: "/serviceMedia/lock.jpg",
+    image: "/serviceMedia/lock.jpg",
     seoText: "Lock and door handle installation in Sydney. Improve your home's safety with professional hardware installation.",
-    title: "Lock & Handle Installation Sydney",
-    price: "From $80",
+    title: "Lock and Handle Installation Sydney",
+    price: "From $120",
     show: true
   },
   {
     id: 4,
-    name: "Frames & Architraves",
-    urlKey: "frames-&-architraves",
+    name: "Frames and Architraves",
+    urlKey: "frames-architraves",
     description: "Installation and repair of door frames and architraves to enhance the finish of your interior spaces.",
 image: "/serviceMedia/windows.jpg",
     seoText: "Architrave and door frame installation services in Sydney for homes, renovations, and repairs.",
-    title: "Frames & Architraves Installation Sydney",
-    price: "From $150",
+    title: "Frames and Architraves Installation Sydney",
+    price: "From $350",
     show: true
   },
   {
     id: 5,
-    name: "Wall Patching & Painting",
-    urlKey: "wall-patching-&-painting",
+    name: "Wall Patching and Painting",
+    urlKey: "wall-patching-painting",
     description: "Repair holes, cracks, and damaged walls with professional patching and painting services.",
     image: "/serviceMedia/patch.jpg",
     seoText: "Wall patching and painting handyman services in Sydney to restore damaged walls and surfaces.",
-    title: "Wall Patching & Painting Sydney",
-    price: "From $100",
+    title: "Wall Patching and Painting Sydney",
+    price: "From $280",
     show: true
   },
   {
@@ -76,7 +75,7 @@ image: "/serviceMedia/windows.jpg",
 image: "/serviceMedia/drywall.jpg",
     seoText: "Gyprock repair services in Sydney for damaged walls, ceilings, and plasterboard.",
     title: "Gyprock Repair Services Sydney",
-    price: "From $120",
+    price: "From $280",
     show: true
   },
   {
@@ -87,7 +86,7 @@ image: "/serviceMedia/drywall.jpg",
     image: "/serviceMedia/ceiling.jpg",
     seoText: "Polycarbonate roof sheet installation in Sydney for pergolas, patios, and outdoor spaces.",
     title: "Polycarbonate Roofing Installation Sydney",
-    price: "From $200",
+    price: "From $400",
     show: true
   },
   {
@@ -97,8 +96,8 @@ image: "/serviceMedia/drywall.jpg",
     description: "Professional silicone sealing for kitchens, bathrooms, sinks, and countertops to prevent water leaks.",
     image: "/serviceMedia/silicon.jpg",
     seoText: "Kitchen and bathroom silicone sealing services in Sydney to prevent leaks and improve hygiene.",
-    title: "Kitchen & Bathroom Silicone Sealing Sydney",
-    price: "From $70",
+    title: "Kitchen and Bathroom Silicone Sealing Sydney",
+    price: "From $150",
     show: true
   },
   {
@@ -109,7 +108,7 @@ image: "/serviceMedia/drywall.jpg",
     image: "/serviceMedia/wardrobe.jpg",
     seoText: "Furniture assembly services in Sydney including IKEA furniture, wardrobes, beds, and office desks.",
     title: "Furniture Assembly Services Sydney",
-    price: "From $60",
+    price: "From $120",
     show: true
   }
 ];

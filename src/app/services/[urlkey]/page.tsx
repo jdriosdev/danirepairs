@@ -1,27 +1,77 @@
-import styles from "../../page.module.css";
+"use client";
+import Head from "next/head";
+import Image from "next/image";
+import { useParams } from "next/navigation";
+
 import CallToActions from "@/components/callToActions";
 import Logo from "@/components/Logo";
-import ServicesList from "@/components/ServicesList";
+import styles from "../../page.module.css";
+import { services, ServiceType } from "../data";
+import { useEffect } from "react";
+
+const findService = (urlKey: string): ServiceType | null => {
+  const service = services?.find((item) => item.urlKey === urlKey);
+
+  if (!service || !service.show) return null;
+
+  return {
+    id: service.id,
+    name: service.name,
+    urlKey: service.urlKey,
+    description: service.description,
+    image: service.image,
+    seoText: service.seoText,
+    title: service.title,
+    price: service.price,
+    show: service.show,
+  };
+};
 
 export default function Home() {
+  const { urlkey } = useParams();
+  const service = findService(urlkey as string);
+
+  if (!service) return <>no service</>;
+
+  useEffect(() => {
+    document.title = `DR | ${service.name}`;
+  }, [service]);
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Logo />
-        <div className={styles.intro}>
-          <h1>My Services.</h1>
-          <p>
-            We can help with a wide range of home repairs and improvements,
-            including skirting board installation, door adjustments, lock and
-            handle installation, frames and architraves, wall patching and
-            painting, Gyprock repairs, installation of polycarbonate roof
-            sheets, silicone sealing for kitchens and bathrooms, furniture
-            assembly, and much more. No job is too small — we are here to help
-            keep your home in great condition.
-          </p>
-        </div>
-        <CallToActions />
-      </main>
+    <div>
+      <Head>
+        <title>{`${service.name} | DR`}</title>
+        <meta name={service.title} content={service.seoText} key="desc" />
+      </Head>
+      <div className={styles.page}>
+        <main className={styles.main}>
+          <div
+            style={{
+              width: "100%",
+              height: "30vh",
+              position: "relative",
+              marginBottom: "16px",
+            }}
+          >
+            <Image
+              src={service.image}
+              alt={service.title}
+              fill={true}
+              style={{ objectFit: "cover" }}
+            />
+            <div style={{ paddingLeft: "16px" }}>
+              <Logo />
+            </div>
+          </div>
+
+          <div className={styles.intro}>
+            <h1>{service.name}</h1>
+            <p>{service.description}</p>
+            <p>{service.price}</p>
+          </div>
+          <CallToActions serviceName={service.name} />
+        </main>
+      </div>
     </div>
   );
 }

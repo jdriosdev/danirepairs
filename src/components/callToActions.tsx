@@ -1,7 +1,11 @@
 import Image from "next/image";
 import styles from "../app/page.module.css";
 
-export default function CallToActions() {
+export default function CallToActions({
+  serviceName,
+}: {
+  serviceName?: string | null;
+}) {
   return (
     <div className={styles.ctas}>
       <a
@@ -21,7 +25,11 @@ export default function CallToActions() {
       </a>
       <a
         className={styles.secondary}
-        href="https://wa.me/420607905?text=Hi Daniel, I need a hand with a new project in Sydney"
+        href={
+          serviceName
+            ? `https://wa.me/+61420607905?text=Hi Daniel, I need a hand with ${serviceName} in...`
+            : "https://wa.me/+61420607905?text=Hi Daniel, I need a hand with a new project in..."
+        }
         target="_blank"
         rel="noopener noreferrer"
       >
